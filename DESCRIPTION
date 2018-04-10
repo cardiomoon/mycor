@@ -1,6 +1,6 @@
 Package: mycor
 Title: Automatic correlation and regression test in a data.frame
-Version: 0.1
+Version: 0.1.1
 Authors@R: person("Keon-Woong","Moon", email="cardiomoon@gmail.com",
     role=c("aut","cre"))
 Description: Perform correlation and linear regression test
@@ -16,3 +16,4 @@ Suggests:
     knitr,
     testthat
 VignetteBuilder: knitr
+RoxygenNote: 6.0.1
