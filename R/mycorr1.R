@@ -30,16 +30,16 @@ mycor=function(x,...,digits) UseMethod("mycor")
 #'        \item{intercept}{a matrix consist of intercept values from \code{\link{lm}}
 #'           between all pairs of numeric data from a data.frame}
 #'     }
-#'  @examples
-#'  out=mycor(iris)
-#'  plot(out)
-#'  plot(out, groups=Species)
-#'  plot(out,type=2,groups=species)
-#'  plot(out,type=4,groups=species)
-#'  out1=mycor(~mpg+disp+wt+hp,data=mtcars,alternative="greater",methods="kendall",
+#' @examples
+#' out=mycor(iris)
+#' plot(out)
+#' plot(out, groups=Species)
+#' plot(out,type=2,groups=species)
+#' plot(out,type=4,groups=species)
+#' out1=mycor(~mpg+disp+wt+hp,data=mtcars,alternative="greater",methods="kendall",
 #'             conf.level=0.95)
-#'  plot(out1,type=3)
-#'  plot(out1,type=4,groups=cyl)
+#' plot(out1,type=3)
+#' plot(out1,type=4,groups=cyl)
 mycor.default=function(x,...,digits=3){
     # select numeric data ony
     select<-(lapply(x,function(x) is.numeric(x))==TRUE)
